@@ -4,7 +4,7 @@ from PIL import Image
 from tqdm import tqdm
 import os
 
-# convert string to integer
+
 def atoi(s):
     n = 0
     for i in s:
@@ -41,7 +41,7 @@ mat = np.zeros((48,48),dtype=np.uint8)
 print("Saving images...")
 
 # read the csv file line by line
-for i in tqdm(range(len(df))):
+for i in tqdm(range(len(df)-1)):
     txt = df['pixels'][i]
     words = txt.split()
     
